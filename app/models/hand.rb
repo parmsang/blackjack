@@ -10,6 +10,9 @@ class Hand
   def hit(card)
     fail 'Hand has ended!' if finished?
     view << card
+    if (total >= 21)
+      stand
+    end
   end
 
   def stand

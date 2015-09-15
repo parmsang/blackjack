@@ -41,4 +41,13 @@ describe Hand do
     expect{subject.hit(:AD)}.to raise_error 'Hand has ended!'
   end
 
+  it "raises error if you try to hit when you have 21 or are bust" do
+    expect(subject.total).to eq 15
+    subject.hit(:"TD")
+    expect(subject.total).to eq 15
+    subject.hit(:"TC")
+    expect(subject.total).to eq 25
+    expect(subject).to be_finished
+  end
+
 end
