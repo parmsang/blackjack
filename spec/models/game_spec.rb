@@ -13,4 +13,20 @@ let(:hand) {double :hand}
     expect(subject.hand).to eq hand
   end
 
+  it "lets player decide to hit" do
+    hand = spy :hand
+    allow(Hand).to receive(:new) {hand}
+    subject.deal
+    subject.hit
+    expect(hand).to have_received(:hit)
+  end
+
+  it "lets player decide to stand" do
+    hand = spy :hand
+    allow(Hand).to receive(:new) {hand}
+    subject.deal
+    subject.stand
+    expect(hand).to have_received(:stand)
+  end
+
 end

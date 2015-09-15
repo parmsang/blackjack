@@ -12,6 +12,7 @@ module Deck
       end
     end
     @deck = shuffle(cards)
+    
   end
 
   def shuffle(unshuffled_cards)

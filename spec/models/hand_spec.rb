@@ -17,7 +17,7 @@ describe Hand do
     expect(subject.view).to eq [:"4H", :AS, :"5D"]
   end
 
-  it { is_expected.to respond_to(:total) }  
+  it { is_expected.to respond_to(:total) }
 
   it "knows how much its hand is worth" do
     expect(subject.total).to eq 15
@@ -28,4 +28,17 @@ describe Hand do
     hand.hit(:"8H")
     expect(hand.total).to eq 12
   end
+
+  it {is_expected.to respond_to(:stand)}
+
+  it "ends hand when player stands" do
+    subject.stand
+    expect(subject).to be_finished
+  end
+
+  it "raises error if you try to hit when hand has ended" do
+    subject.stand
+    expect{subject.hit(:AD)}.to raise_error 'Hand has ended!'
+  end
+
 end
