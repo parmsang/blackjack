@@ -1,0 +1,31 @@
+require "rails_helper"
+
+describe Hand do
+
+  let(:subject) { Hand.new(:"4H", :AS) }
+
+  it { is_expected.to respond_to(:view) }
+
+  it "has a 2 card hand when created" do
+    expect(subject.view.length).to eq 2
+  end
+
+  it { is_expected.to respond_to(:hit).with(1).argument }
+
+  it "can hit for an extra card" do
+    subject.hit(:"5D")
+    expect(subject.view).to eq [:"4H", :AS, :"5D"]
+  end
+
+  it { is_expected.to respond_to(:total) }  
+
+  it "knows how much its hand is worth" do
+    expect(subject.total).to eq 15
+    subject.hit(:"TD")
+    expect(subject.total).to eq 15
+    hand = Hand.new(:AH,:AD)
+    hand.hit(:"2D")
+    hand.hit(:"8H")
+    expect(hand.total).to eq 12
+  end
+end
