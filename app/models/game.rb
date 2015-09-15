@@ -18,4 +18,8 @@ class Game
     hand.stand
   end
 
+  def winner?
+    hand.total <= 21 if hand.finished?
+  end
+
 end
