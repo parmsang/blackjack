@@ -1,15 +1,76 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  text-align: center;
+  background-image: url("http://sr.photos3.fotosearch.com/bthumb/CSP/CSP992/k13331897.jpg");
+
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Lucida Console", Arial, sans-serif;
+  color: #ffff00;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Lucida Console", Arial, sans-serif;
+  color: #ffff00;
+  text-align: center;
+}
+
+.hand {
+  max-width: 980 px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.deck {
+
+  float: left;
+}
+.hit {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: red;
+  border-color: black;
+  text-shadow: 0px 2px 2px #ddd;
+}
+
+.stand {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #1bba61;
+  border-color: black;
+  text-shadow: 0px 2px 2px #ddd;
+}
+
+.king {
+  height: 200px;
+  width: 150px;
+
+}
+
+img {
+
+  height: 200px;
+  width: 150px;
+
+
+}
+
+.back {
+  height: 200px;
+  width: 150px;
+  float: left;
+}
+
+.buttons {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+
+}
