@@ -15,7 +15,7 @@ $(document).ready(function() {
     $.ajax({
       url: "/game/hit",
       success: function(data) {
-        var img = $("<img />").attr('src', "/assets/cards/" + data.view + ".png");
+        var img = $("<img />").attr('src', "/assets/images/cards/" + data.view + ".png");
         $('#cards').append(img);
         $('#total').text(data.total);
       },
