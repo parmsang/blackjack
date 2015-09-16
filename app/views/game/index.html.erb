@@ -1,0 +1,24 @@
+
+      <h1>Blackjack</h1>
+      <h3>How lucky are you feeling today?</h3>
+      <h3 id='total'>
+        <%= @game.hand.total %>
+      </h3>
+    <div class="hand">
+        <%= image_tag "cards/#{@game.hand.view[0].to_s}.png", :id =>"card1" %>
+        <%= image_tag "cards/#{@game.hand.view[1].to_s}.png", :id =>"card2" %>
+        <span id="cards"></span>
+
+    </div>
+    <div class="deck"
+        <img class="back" src="http://pics.livejournal.com/dailyafirmation/pic/002xt0qd"/>
+    </div>
+      <span class="buttons">
+        <button id="hit" class="hit" >Hit</button>
+        <button id="stand" class="stand" >Stand</button>
+        <button id="deal" class="deal" >New Hand</button>
+
+        <%= notice %>
+      </span>
+
+      <input type="hidden" value="<%= @game.hand.view %>" id="hiddenID">
