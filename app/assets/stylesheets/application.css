@@ -33,7 +33,17 @@ h3 {
   width: 100px;
   border-style: solid;
   border-radius: 10px;
-  background-color: red;
+  background-color: #1bba61;
+  border-color: black;
+  text-shadow: 0px 2px 2px #ddd;
+}
+
+.deal {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: yellow;
   border-color: black;
   text-shadow: 0px 2px 2px #ddd;
 }
@@ -43,7 +53,7 @@ h3 {
   width: 100px;
   border-style: solid;
   border-radius: 10px;
-  background-color: #1bba61;
+  background-color: red;
   border-color: black;
   text-shadow: 0px 2px 2px #ddd;
 }

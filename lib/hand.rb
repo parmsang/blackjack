@@ -4,7 +4,7 @@ class Hand
 
   def initialize(card1, card2)
     @view = [card1, card2]
-    @finished = false
+    total == 21 ? @finished = true : @finished=false
   end
 
   def hit(card)
@@ -21,8 +21,8 @@ class Hand
 
   def total
     total = 0
-    sort.each do |x|
 
+    sort.each do |x|
       if (x[0] == "T" || x[0] == "J" || x[0] == "Q" || x[0] == "K")
         total += 10
       else
@@ -32,7 +32,7 @@ class Hand
 
     if ace_count > 0 && ((total + 11 + ace_count - 1) > 21)
       total += ace_count
-    else ace_count > 0
+    elsif ace_count > 0
       total += 10 + ace_count
     end
 

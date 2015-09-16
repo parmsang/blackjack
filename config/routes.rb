@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root to: 'game#index'
   get 'game' => 'game#index'
 
+  get 'game/hit' => 'game#hit'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
