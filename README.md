@@ -22,7 +22,7 @@ Technologies Used
 Screenshot
 ---
 
-![alt text](app/assets/images/blackjack_screenshot.png)
+![alt text](https://github.com/ajitsy/blackjack/blob/master/app/assets/images/blackjack_screenshot.png)
 
 
 Find a link to our deployed Blackjack app [here](https://pure-refuge-7844.herokuapp.com/)
