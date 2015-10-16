@@ -7,7 +7,7 @@ Blackjack
 Task
 ---
 
-Created a basic single player black jack game.
+Created a basic single player black jack game. This was a 2-day team project during my time at [Makers Academy](http://www.makersacademy.com/).
 
 Link to our deployed Blackjack app [here](https://pure-refuge-7844.herokuapp.com/)
 
